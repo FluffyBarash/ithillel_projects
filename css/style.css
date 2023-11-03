@@ -64,18 +64,35 @@ img {
   margin: 0px auto;
 }
 
-.img {
-  width: 809px;
-  background-color: aqua;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 50px;
+.select p {
+  margin-bottom: 30px;
 }
-.img img {
-  width: 30%;
-  margin: 0 auto;
+.select h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: chocolate;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+#Hippo {
+  color: blueviolet;
+  text-align: center;
+}
+
+.Hippo__class {
+  padding: 10px;
+  text-align: right;
+  background-color: darkmagenta;
+}
+
+.hippo_red {
+  color: red;
+}
+
+.words h1 {
+  color: blue;
+  text-shadow: 1px 1px 30px yellow;
 }
