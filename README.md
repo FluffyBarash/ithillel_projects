@@ -1,1 +1,0 @@
-# ithillel_projects
