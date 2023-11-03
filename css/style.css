@@ -63,3 +63,19 @@ img {
   max-width: 1040px;
   margin: 0px auto;
 }
+
+.img {
+  width: 809px;
+  background-color: aqua;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+.img img {
+  width: 30%;
+  margin: 0 auto;
+}
