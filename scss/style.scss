@@ -56,45 +56,21 @@ img {
   margin: 0px auto;
 }
 
-.float__body {
-  padding: 50px;
-  background-color: #c4c4c4;
+.table {
+  margin: 0 auto;
   margin-top: 5rem;
+  width: 50%;
 }
 
-.float__line {
-  background-color: #e6e6e6;
-  font-size: clamp(2.125rem, 0.563rem + 5vw, 4rem);
-  margin-bottom: 0.5em;
+table {
+  margin: 0 auto;
+  border: 2px solid darkblue;
 }
 
-.square {
-  display: inline-block;
-  background-color: #fc8f8f;
-  padding: 1em;
+.color {
+  background-color: pink;
 }
 
-.two {
-  float: right;
-}
-
-.two_two {
-  float: right;
-  margin-left: 0.5em;
-}
-
-.square_two {
-  display: inline-block;
-  background-color: #fc8f8f;
-  font-size: clamp(0.938rem, 0.156rem + 2.5vw, 1.875rem);
-  padding: 1em;
-}
-
-.three {
-  float: right;
-}
-
-.four {
-  float: right;
-  margin-left: 0.25em;
+td {
+  text-align: center;
 }
