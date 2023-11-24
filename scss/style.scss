@@ -8,10 +8,12 @@
 html,
 body {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   height: 100%;
   font-family: Roboto;
   font-style: normal;
+  color: #161616;
+  background-color: #d8d8d6;
 }
 
 *,
@@ -54,162 +56,278 @@ img {
 .footer {
   margin-top: auto;
 }
+
 ._container {
-  max-width: 1100px;
+  max-width: 1110px;
   margin: 0px auto;
 }
 
 // #########_Header_###################################################
 
-.header {
-  background-color: rgba(238, 239, 241, 1);
+.header__body {
+  margin-bottom: 9%;
+}
+.menu {
+  background-color: $top_color;
 }
 
 .menu__body {
-  padding-top: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0px 20px 0px;
+}
+
+.menu__logo-link {
+  & a {
+    text-decoration: none;
+    color: #161616;
+    font-family: Vetrino;
+    font-size: 36px;
+    font-weight: 400;
+  }
 }
 
 .menu__link {
-  display: inline-block;
+  align-items: center;
+  display: flex;
+  gap: 90px;
   & a {
-    margin-right: 40px;
+    color: #161616;
     text-decoration: none;
-    color: black;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
+    font-family: Roboto;
+    white-space: nowrap;
     &:hover {
-      color: $top_color;
+      color: wheat;
+      text-decoration: underline;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.5s ease;
     }
   }
-  .activated {
-    color: $top_color;
+}
+
+.title__body {
+  display: flex;
+  gap: 30px;
+}
+
+.title__info {
+  min-width: 540px;
+  max-width: 540px;
+  align-items: center;
+  margin-top: 180px;
+  & h1 {
+    font-family: Vetrino;
+    font-size: 62px;
+    margin-bottom: 0.95em;
+  }
+  & p {
+    line-height: 1.6;
+    margin-bottom: 1.4em;
   }
 }
 
-.header__title {
-  margin-top: 14%;
-  width: 540px;
-  margin-bottom: 14%;
-  & h1 {
-    color: black;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 1.25em;
-  }
-  & p {
-    color: #727272;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 3.75em;
-  }
-  & a {
-    text-decoration: none;
-    max-width: 225px;
-    width: 55%;
+.title__button {
+  display: flex;
+  gap: 65px;
+  .button-one {
+    width: 190px;
+    padding: 20px 30px 20px 30px;
     background-color: $top_color;
-    padding: 20px 40px 20px 40px;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    transition: all 0.5s ease;
+    text-decoration: none;
+    color: #161616;
+    font-size: 18px;
     &:hover {
+      background-color: wheat;
       transition: all 0.5s ease;
-      background-color: gold;
+    }
+  }
+  .button-two {
+    width: 190px;
+    padding: 20px 15px 20px 15px;
+    border: 1px solid $top_color;
+    text-decoration: none;
+    color: #161616;
+    &:hover {
+      background-color: $top_color;
+      border: 1px solid wheat;
+      transition: all 0.5s ease;
     }
   }
 }
 
 // #########_Main_###################################################
 
-.main {
-  background-color: #f9f9f9;
-}
-.title__body {
-  width: 540px;
-  margin-top: 6%;
-  margin-bottom: 5%;
+.main__title {
+  text-align: center;
+  max-width: 540px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 12%;
   & h2 {
-    color: #000;
-    text-align: center;
+    font-family: Vetrino;
     font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
   & p {
-    color: #727272;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.6;
   }
 }
 
-.projects {
+.strip {
   background-color: $top_color;
-  padding: 100px 100px 100px 100px;
+  padding: 80px 0px 80px 0px;
+  margin-bottom: 12%;
 }
 
-.projects__body {
-  width: 960px;
+.strip__cards {
+  display: flex;
+  gap: 45px;
 }
 
-.project {
-  width: 130px;
-  display: inline-flex;
-  .projects__img {
-    width: 50px;
-    min-width: 50px;
-    margin-right: 20px;
+.strip__card {
+  margin: 0 auto;
+  text-align: center;
+  & img {
+    margin-bottom: 20px;
   }
 }
 
-.project__margin {
-  margin-right: 40px;
+.how-working__body {
+  display: flex;
+  margin-bottom: 12%;
+  gap: 30px;
 }
 
-.projects__title {
-  color: #fff;
-  .projects__quantity {
-    font-size: 21px;
-    font-weight: 500;
+.how-working__info {
+  width: 50%;
+  padding-top: 180px;
+  & h2 {
+    text-align: center;
+    font-family: Vetrino;
+    font-size: 32px;
+    margin-bottom: 2em;
+  }
+}
+
+.our-works__body {
+  margin-bottom: 12%;
+  & h2 {
+    text-align: center;
+    font-family: Vetrino;
+    font-size: 32px;
+    margin-bottom: 2.8em;
+  }
+}
+
+.our-works__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.our-works__card {
+  background-color: $top_color;
+  padding: 15px;
+  text-align: center;
+  & img {
+    margin-bottom: 25px;
   }
   & p {
-    font-weight: 400;
+    margin-bottom: 40px;
   }
-}
-
-.main__video {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1110px;
-  height: 600px;
-  margin-bottom: 5%;
 }
 
 // #########_Footer_###################################################
 
 .footer {
   background-color: $top_color;
-  padding: 50px 20px 50px 20px;
 }
 
-.footer__info {
-  margin-right: auto;
-  width: 170px;
-  color: #fff;
+.footer__body {
+  padding-top: 3.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   & h3 {
-    font-size: 21px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20%;
   }
+}
+
+.footer__logo {
+  margin-left: -65px;
   & p {
-    font-size: 13px;
-    font-weight: 400;
+    font-family: Vetrino;
+    font-size: 36px;
   }
+}
+
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  & p {
+    margin-bottom: 40%;
+  }
+}
+
+.social-networks__link {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.instagrame {
+  width: 24px;
+  height: 24px;
+  &:hover {
+    & svg {
+      & path {
+        fill: wheat;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.telegram {
+  width: 27.4px;
+  height: 24px;
+  &:hover {
+    & svg {
+      & path {
+        fill: wheat;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.viber {
+  width: 22.8px;
+  height: 24px;
+  &:hover {
+    & svg {
+      & path {
+        fill: wheat;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-bottom: 5%;
 }
