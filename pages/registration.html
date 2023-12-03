@@ -6,8 +6,8 @@
     <meta name="description" content="c" />
     <meta name="keywords" content="c" />
     <link rel="icon" href="images/other/icon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>entrance</title>
+    <link rel="stylesheet" href="../css/registration.css" />
+    <title>registration</title>
   </head>
   <body>
     <div class="wrapper">
@@ -17,38 +17,45 @@
             <div class="registration-field__body">
               <div class="registration-field__button">
                 <div class="entrance">
-                  <a href="#">Вход</a>
+                  <a href="../index.html">Вход</a>
+                  <span class="span-2"></span>
                 </div>
                 <div class="registration">
-                  <span class="span-2"></span>
-                  <a href="pages/registration.html">Регистрация</a>
+                  <a href="#">Регистрация</a>
                 </div>
               </div>
               <div class="title">
-                <h1>Вход</h1>
+                <h1>Регистрация</h1>
               </div>
               <div class="inputs">
                 <form action="https://fom.in.ua/echo" method="post">
                   <input type="text" name="text" placeholder="Введите E-mail" />
                   <input type="password" name="password" placeholder="Пароль" />
+                  <input
+                    type="password"
+                    name="repeat password"
+                    placeholder="Повторите пароль"
+                  />
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" name="checkbox" />
                       <span class="checkbox__span-1"></span>
-                      <span class="checkbox__span-2">Запомнить меня</span>
+                      <span class="checkbox__span-2"
+                        >Получать уведомления ?</span
+                      >
                     </label>
-                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Read the documentation</a>
                   </div>
                   <div class="button">
-                    <button type="submit">Войти</button>
+                    <button type="submit">Регистрация</button>
                   </div>
                 </form>
                 <div class="some-nonsense">
-                  <p>Еще нет аккаунта?</p>
-                  <a href="pages/registration.html">Зарегистрироваться</a>
+                  <p>Уже есть аккаунт?</p>
+                  <a href="../index.html">Войти</a>
                 </div>
                 <div class="social-network">
-                  <p>Или войдите через</p>
+                  <p>Зарегистрироваться через</p>
                   <div class="social-network__link">
                     <a href="https://uk-ua.facebook.com/">
                       <svg
