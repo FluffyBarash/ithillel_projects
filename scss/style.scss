@@ -85,6 +85,7 @@ img {
 }
 
 .menu__windows-1 {
+  top: 49px;
   position: absolute;
   z-index: -0;
   width: 200px;
@@ -98,10 +99,12 @@ img {
 
 .windows__button-1 {
   left: 0;
+  top: 49px;
 }
 
 .windows__button-2 {
   left: 85px;
+  top: 49px;
 }
 
 .button-1__windows-1 {
@@ -121,6 +124,7 @@ img {
 
 .windows__button-3 {
   left: 220px;
+  top: 49px;
 }
 
 .button-3__windows-1 {
@@ -135,6 +139,7 @@ img {
 
 .windows__button-4 {
   left: 310px;
+  top: 49px;
 }
 
 .button-4__windows-1 {
@@ -183,6 +188,7 @@ img {
     }
   }
 }
+
 // #########_Main_###################################################
 .main {
   background-color: aliceblue;
